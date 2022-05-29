@@ -33,7 +33,7 @@ namespace Gestion_des_command
         }
        
        
-        public static void Enregistre(string chemin, List<Client> ls)
+        public static void save(string chemin, List<Client> ls)
         {
 
             XmlSerializer serialiser = new XmlSerializer(typeof(List<Client>));
@@ -46,7 +46,7 @@ namespace Gestion_des_command
 
         }
         
-        public static List<Client> Charger(string chemin)
+        public static List<Client> load(string chemin)
         {
 
             XmlSerializer serialiser = new XmlSerializer(typeof(List<Client>));

@@ -30,7 +30,7 @@ namespace Gestion_des_command
             Quantite = quantite;
         }
        
-        public static void Enregistre(string chemin, List<Produit> ls)
+        public static void save(string chemin, List<Produit> ls)
         {
 
             XmlSerializer serialiser = new XmlSerializer(typeof(List<Produit>));
@@ -43,7 +43,7 @@ namespace Gestion_des_command
 
         }
 
-        public static List<Produit> Charger(string path)
+        public static List<Produit> load(string path)
         {
 
             XmlSerializer serialiser = new XmlSerializer(typeof(List<Produit>));

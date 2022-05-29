@@ -155,9 +155,9 @@ namespace Gestion_des_command
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Produit.Enregistre("D:\\lsProduit.xml", Produit.lsprod);
-            Client.Enregistre("D:\\lsClient.xml", Form2.lscli);
-            Commande.Enregistre("D:\\lsCommande.xml", Form4.lscom);
+            Produit.save("D:\\lsProduit.xml", Produit.lsprod);
+            Client.save("D:\\lsClient.xml", Form2.lscli);
+            Commande.save("D:\\lsCommande.xml", Form4.lscom);
 
             reg = 1;
         }

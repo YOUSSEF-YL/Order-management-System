@@ -20,7 +20,7 @@ namespace Gestion_des_command
             this.Username = Username;
             this.password = password;
         }
-        public static List<Users> Charger(string path)
+        public static List<Users> load(string path)
         {
 
             XmlSerializer serialiser = new XmlSerializer(typeof(List<Users>));
@@ -35,7 +35,7 @@ namespace Gestion_des_command
 
         }
 
-        public static void Enregistre(string path, List<Users> ls)
+        public static void save(string path, List<Users> ls)
         {
 
             XmlSerializer serialiser = new XmlSerializer(typeof(List<Users>));
